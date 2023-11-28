@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="arino.css">
+    <title>AURINOFLIX</title>
+</head>
+<body>
+    <div id="app">
+        <div class="center"> <img src="./AURINOFLIX.png"></div>
+        <button onclick="openForm()"><b>ADICIONAR FILME</b></button>
+        <div id="addMovieForm" style="display:none;">
+            <label for="movieTitle"><b>NOME DO FILME</b></label>
+            <input type="text" id="movieTitle" required>
+            <label for="movieCover"><b>LINK DA CAPA DO FILME</b>:</label>
+            <input type="url" id="movieCover" required>
+            <label for="movieLink"><b>LINK DO TRAILER DO FILME:</b></label>
+            <input type="url" id="movieLink" required>
+            <button onclick="addMovie()"><b>ADICIONAR</b></button>
+            <button onclick="closeForm()"><b>CANCELAR</b></button>
+
+          <h1>LISTA DE FILMES</h1>
+          <div id="movieList"></div>    
+        </div>
+    </div>
+    <script src="arino.js"></script>
+</body>
+</html>
